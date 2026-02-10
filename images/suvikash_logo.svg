@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 280 280" width="280" height="280" role="img" aria-label="Suvikash English Medium School logo">
+  <title>Suvikash English Medium School</title>
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0f4ac9"/>
+      <stop offset="1" stop-color="#4fb0ff"/>
+    </linearGradient>
+    <linearGradient id="flameGrad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffd24d"/>
+      <stop offset="60%" stop-color="#ff8a3d"/>
+      <stop offset="100%" stop-color="#d92e2e"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="35%" r="40%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#fff" stop-opacity="0" />
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+    <!-- full ring (kept for reference) -->
+    <path id="ringPath" d="M140,28a112,112 0 1,1 0,224a112,112 0 1,1 0,-224z"/>
+    <!-- top arc path for readable text (left->right along top) -->
+    <path id="topArc" d="M40,140 A100,100 0 0,1 240,140" />
+  </defs>
+
+  <!-- background rounded square -->
+  <rect width="280" height="280" rx="30" fill="url(#g1)" />
+
+  <!-- outer black ring and inner blue ring -->
+  <g transform="translate(0,0)" filter="url(#shadow)">
+    <circle cx="140" cy="140" r="100" fill="#000" />
+    <circle cx="140" cy="140" r="84" fill="url(#g1)" />
+  </g>
+
+  <!-- circular brand text on ring -->
+  <!-- circular brand text (uses top arc so text is readable along top) -->
+  <g fill="#fff" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="13">
+    <text text-anchor="middle">
+      <textPath xlink:href="#topArc" startOffset="50%" text-anchor="middle">SUVIKASH ENGLISH MEDIUM SCHOOL</textPath>
+    </text>
+  </g>
+
+  <!-- halo behind diya/flame -->
+  <circle cx="140" cy="92" r="44" fill="url(#halo)" />
+
+  <!-- lotus petals simplified -->
+  <g transform="translate(140,120)">
+    <path d="M0,34 C22,10 44,6 66,0 C44,6 22,10 0,34 Z" fill="#ff2f78" />
+    <path d="M0,34 C-22,10 -44,6 -66,0 C-44,6 -22,10 0,34 Z" fill="#ff2f78" />
+    <path d="M0,28 C12,8 28,2 40,-6 C28,2 12,8 0,28 Z" fill="#ff7fb3" transform="translate(-20,-6)"/>
+    <ellipse cx="0" cy="36" rx="44" ry="12" fill="#ffd6e8" opacity="0.9"/>
+  </g>
+
+  <!-- waves under lotus -->
+  <g transform="translate(140,160)">
+    <path d="M-70,10 q18,-10 36,0 t36,0 t36,0" stroke="#072e7a" stroke-width="6" fill="none" stroke-linecap="round" />
+    <path d="M-70,22 q18,-8 36,0 t36,0 t36,0" stroke="#2b7bff" stroke-width="4" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- diya bowl -->
+  <g transform="translate(140,100)">
+    <path d="M-36,20 C-20,42 20,42 36,20 L36,14 C20,32 -20,32 -36,14 Z" fill="#fff" opacity="0.98"/>
+    <path d="M-44,20 C-20,56 20,56 44,20" stroke="#071233" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- flame -->
+  <g transform="translate(140,72)">
+    <path d="M0,38 C8,28 24,18 24,6 C24,-4 8,-12 0,-28 C-8,-12 -24,-4 -24,6 C-24,18 -8,28 0,38 Z" fill="url(#flameGrad)"/>
+    <path d="M0,30 C4,24 12,18 12,10 C12,4 4,0 0,-6 C-4,0 -12,4 -12,10 C-12,18 -4,24 0,30 Z" fill="#fff" opacity="0.14"/>
+  </g>
+
+  <!-- bottom arch -->
+  <g transform="translate(140,180)">
+    <path d="M-92,12 L-44,12 C-8,12 8,12 44,12 L92,12" stroke="#071233" stroke-width="14" stroke-linecap="square" fill="none" />
+  </g>
+
+  <!-- small label under logo -->
+  <text x="140" y="250" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#071233" font-weight="700">Suvikash English Medium School</text>
+
+</svg>

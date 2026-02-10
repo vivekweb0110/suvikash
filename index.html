@@ -1,159 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Suvikash English Medium School</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f5f7fb;
-            color: #222;
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Suvikash English Medium School — Inspiring Minds</title>
+    <meta name="description" content="Suvikash English Medium School — academic excellence, character building and holistic development.">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#1d4ed8">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "School",
+        "name": "Suvikash English Medium School",
+        "url": "",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "",
+            "addressRegion": "",
+            "postalCode": ""
         }
-        header {
-            background: #1e3a8a;
-            color: white;
-            padding: 20px 40px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-        }
-        header p {
-            margin: 5px 0 0;
-            font-size: 14px;
-        }
-        nav {
-            background: #111827;
-            padding: 10px 40px;
-        }
-        nav a {
-            color: #e5e7eb;
-            text-decoration: none;
-            margin-right: 20px;
-            font-size: 14px;
-        }
-        nav a:hover {
-            color: #ffffff;
-            text-decoration: underline;
-        }
-        .hero {
-            padding: 60px 40px;
-            background: linear-gradient(135deg, #1d4ed8, #3b82f6);
-            color: white;
-            text-align: left;
-        }
-        .hero h2 {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-        .hero p {
-            font-size: 16px;
-            max-width: 600px;
-        }
-        .hero button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            border: none;
-            background: #fbbf24;
-            color: #111827;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-        .hero button:hover {
-            background: #f59e0b;
-        }
-        .container {
-            padding: 40px;
-        }
-        .section-title {
-            font-size: 22px;
-            margin-bottom: 10px;
-            border-left: 4px solid #1d4ed8;
-            padding-left: 10px;
-        }
-        .about, .academics, .facilities, .contact {
-            margin-bottom: 40px;
-            background: white;
-            padding: 20px 25px;
-            border-radius: 6px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-        }
-        .two-column {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .two-column > div {
-            flex: 1 1 250px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        footer {
-            background: #111827;
-            color: #9ca3af;
-            text-align: center;
-            padding: 15px 10px;
-            font-size: 13px;
-        }
-        @media (max-width: 600px) {
-            header, nav, .hero, .container {
-                padding: 15px;
-            }
-            .hero h2 {
-                font-size: 24px;
-            }
-        }
-    </style>
+    }
+    </script>
 </head>
 <body>
-
-    <header>
-        <h1>Suvikash English Medium School</h1>
-        <p>Inspiring minds, shaping futures through quality education.</p>
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <div class="brand">
+                                <img src="images/suvikash_logo.svg" alt="Suvikash School logo" class="site-logo" onerror="this.onerror=null;this.src='images/logo.svg'">
+                                <div>
+                                    <a href="#home" class="logo">Suvikash<span class="logo-accent"> School</span></a>
+                                    <p class="tag">Inspiring minds • Shaping futures</p>
+                                </div>
+            </div>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">☰</button>
+            <nav id="main-nav" class="main-nav" role="navigation">
+                <a href="#about">About</a>
+                <a href="#academics">Academics</a>
+                <a href="#facilities">Facilities</a>
+                <a href="#admissions">Admissions</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#academics">Academics</a>
-        <a href="#facilities">Facilities</a>
-        <a href="#admissions">Admissions</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section class="hero">
-        <h2>Welcome to Suvikash English Medium School</h2>
-        <p>
-            Suvikash English Medium School is committed to academic excellence, character building,
-            and holistic development of every child in a safe and nurturing environment.
-        </p>
-        <button onclick="document.getElementById('admissions').scrollIntoView({behavior: 'smooth'});">
-            View Admissions
-        </button>
-    </section>
-
-    <div class="container">
-
-        <section id="about" class="about">
-            <h3 class="section-title">About Us</h3>
-            <p>
-                Suvikash English Medium School provides a balanced blend of academics, co-curricular
-                activities, and values-based education. Our dedicated faculty and modern teaching
-                methods ensure that students are prepared for the challenges of the future.
-            </p>
-            <p>
-                We believe in nurturing curiosity, creativity, and confidence in every learner.
-            </p>
+    <main id="home">
+        <section class="hero">
+            <div class="wrap hero-inner">
+                <h1>Welcome to Suvikash English Medium School</h1>
+                <p class="lead">We deliver quality education with a focus on academic excellence, character development, and 21st-century skills.</p>
+                <div class="hero-ctas">
+                    <a class="btn primary" href="#admissions">Admissions</a>
+                    <a class="btn ghost" href="#about">Learn More</a>
+                </div>
+            </div>
         </section>
 
-        <section id="academics" class="academics">
-            <h3 class="section-title">Academics</h3>
-            <div class="two-column">
+        <section id="about" class="wrap section">
+            <h2 class="section-title">About Us</h2>
+            <p class="section-lead">Suvikash English Medium School provides a balanced blend of academics, co-curricular activities, and values-based learning in a safe, nurturing environment.</p>
+            <p class="subtle">Suvikash is supported by the Suvikash Charitable Trust and operates under Suvikash Educational Institutions, ensuring community-focused governance and quality education across its campuses.</p>
+            <div class="grid cols-3">
+                <article class="card">
+                    <h3>Our Mission</h3>
+                    <p>Nurture curious, confident learners who contribute positively to society.</p>
+                </article>
+                <article class="card">
+                    <h3>Our Vision</h3>
+                    <p>To be a leading school recognized for academic excellence and character formation.</p>
+                </article>
+                <article class="card">
+                    <h3>Values</h3>
+                    <p>Respect, Integrity, Curiosity, Resilience and Collaboration.</p>
+                    <p class="highlight">We offer dedicated classes on Human Values and Indian Culture to help students develop moral grounding, civic responsibility, and appreciation for India's cultural heritage.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="academics" class="wrap section alt">
+            <h2 class="section-title">Academics</h2>
+            <div class="grid cols-2">
                 <div>
-                    <h4>Curriculum</h4>
+                    <h3>Curriculum</h3>
                     <ul>
                         <li>Pre-Primary (Nursery, LKG, UKG)</li>
                         <li>Primary (Classes 1–5)</li>
@@ -162,95 +92,80 @@
                     </ul>
                 </div>
                 <div>
-                    <h4>Highlights</h4>
+                    <h3>Highlights</h3>
                     <ul>
-                        <li>Activity-based learning</li>
-                        <li>Regular assessments and feedback</li>
-                        <li>Experienced and trained faculty</li>
-                        <li>Focus on English communication skills</li>
+                        <li>Activity-based learning and project work</li>
+                        <li>Experienced, caring faculty</li>
+                        <li>Strong emphasis on communication and digital skills</li>
+                        <li>Special classes on Human Values and Indian Culture to foster ethics and cultural awareness</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="facilities" class="facilities">
-            <h3 class="section-title">Facilities</h3>
-            <div class="two-column">
-                <div>
-                    <ul>
-                        <li>Spacious, well-ventilated classrooms</li>
-                        <li>Library with a wide range of books</li>
-                        <li>Science and computer laboratories</li>
-                        <li>Playground and sports facilities</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>Safe and secure campus</li>
-                        <li>Co-curricular clubs and activities</li>
-                        <li>Regular cultural and sports events</li>
-                        <li>Transport facility (if applicable)</li>
-                    </ul>
-                </div>
+        <section id="facilities" class="wrap section">
+            <h2 class="section-title">Facilities</h2>
+            <div class="grid cols-4">
+                <div class="feature">Library</div>
+                <div class="feature">Science Labs</div>
+                <div class="feature">Computer Lab</div>
+                <div class="feature">Playground & Sports</div>
             </div>
         </section>
 
-        <section id="admissions" class="about">
-            <h3 class="section-title">Admissions</h3>
-            <p>
-                Admissions are open for the academic year. Parents are requested to visit the school
-                office for detailed information regarding the admission process, fee structure, and
-                required documents.
-            </p>
-            <ul>
-                <li>Admission forms available at the school office.</li>
-                <li>Interaction/assessment may be conducted for certain classes.</li>
-                <li>Birth certificate and previous school records required.</li>
-            </ul>
+        <section id="admissions" class="wrap section alt">
+            <h2 class="section-title">Admissions</h2>
+            <p>Admissions are open for the upcoming academic year. Visit the school office or contact us for the latest admission circular and fee structure.</p>
+            <a class="btn primary" href="#contact">Contact Admissions</a>
         </section>
 
-        <section id="contact" class="contact">
-            <h3 class="section-title">Contact Us</h3>
-            <div class="two-column">
-                <div>
-                    <p><strong>School Name:</strong> Suvikash English Medium School</p>
-                    <p><strong>Address:</strong> [Add full address here]</p>
-                    <p><strong>Phone:</strong> [Add phone number]</p>
-                    <p><strong>Email:</strong> [Add email address]</p>
-                </div>
-                <div>
-                    <h4>Send us a message</h4>
-                    <form>
-                        <p>
-                            <label for="name">Name:</label><br>
-                            <input type="text" id="name" name="name" style="width:100%; padding:6px;">
-                        </p>
-                        <p>
-                            <label for="email">Email:</label><br>
-                            <input type="email" id="email" name="email" style="width:100%; padding:6px;">
-                        </p>
-                        <p>
-                            <label for="message">Message:</label><br>
-                            <textarea id="message" name="message" rows="4" style="width:100%; padding:6px;"></textarea>
-                        </p>
-                        <button type="submit" style="padding:8px 16px; background:#1d4ed8; color:white; border:none; border-radius:4px; cursor:pointer;">
-                            Submit
-                        </button>
-                    </form>
-                </div>
+        <section id="news" class="wrap section">
+            <h2 class="section-title">Latest News</h2>
+            <div class="grid cols-3">
+                <article class="news-card">
+                    <h4>Annual Sports Day</h4>
+                    <p>Students showcased excellent sportsmanship and teamwork.</p>
+                </article>
+                <article class="news-card">
+                    <h4>Inter-school Science Fair</h4>
+                    <p>Our students won awards for innovative projects.</p>
+                </article>
+                <article class="news-card">
+                    <h4>Art & Culture Week</h4>
+                    <p>A week of performances, exhibitions and learning.</p>
+                </article>
             </div>
         </section>
 
-    </div>
+        <section id="contact" class="wrap section alt">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="grid cols-2">
+                <div>
+                    <p><strong>Address:</strong> Kasturi Nagar, 1st Lane Rayagada, Odisha</p>
+                    <p><strong>Phone:</strong> S K Agarwal - 8249986144, Parbati Gupta - 8917568485</p>
+                    <p><strong>Email:</strong> suvikashschool@gmail.com</p>
+                </div>
+                <form id="contactForm" class="contact-form" novalidate>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                    <p id="formStatus" aria-live="polite" class="form-status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
 
-    <footer>
-        © <span id="year"></span> Suvikash English Medium School. All rights reserved.
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <div>© <span id="year"></span> Suvikash English Medium School</div>
+            <div class="small">All rights reserved.</div>
+        </div>
     </footer>
 
-    <script>
-        // Set current year in footer
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-
+    <script src="script.js" defer></script>
 </body>
 </html>
